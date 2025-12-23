@@ -1,0 +1,171 @@
+.ts-app {
+  min-height: 100vh;
+}
+
+.ts-main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ts-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.ts-title {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 650;
+  color: #111827;
+}
+
+.ts-text {
+  margin: 0 0 12px 0;
+  color: #374151;
+  font-size: 14px;
+}
+
+.ts-muted {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.ts-warning {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-size: 14px;
+}
+
+.ts-status {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  font-size: 14px;
+}
+
+.ts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.ts-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.ts-label {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.ts-value {
+  color: #111827;
+  font-size: 13px;
+}
+
+.ts-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.ts-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ts-button,
+.ts-button-secondary {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.ts-button {
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.ts-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ts-button-secondary {
+  background: #ffffff;
+  color: #111827;
+  border-color: #e5e7eb;
+}
+
+.ts-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ts-table-header,
+.ts-table-row {
+  display: grid;
+  grid-template-columns: 120px 1fr 140px 220px;
+  gap: 12px;
+  align-items: center;
+}
+
+.ts-table-header {
+  color: #6b7280;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.ts-table-row {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.ts-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 720px) {
+  .ts-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .ts-table-header {
+    display: none;
+  }
+
+  .ts-table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .ts-actions {
+    justify-content: flex-start;
+  }
+}
+
